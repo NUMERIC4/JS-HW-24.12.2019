@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="syntax.css">
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    
+    <div class="OuterDiv">
+        <div class="InnerDiv First">
+            <img id="Rock" style="width: 150px;" onclick="UserPrefR()" src="rock.png" alt="1st">
+        </div>
+        <div class="InnerDiv Second">
+            <img id="Paper" style="width: 150px;" onclick="UserPrefP()" src="paper.png" alt="2nd">
+        </div>
+        <div class="InnerDiv Third">
+            <img id="Scissors" style="width: 150px;" onclick="UserPrefS()" src="scissors.png" alt="3rd">
+        </div>
+    </div>
+
+    <div class="ScoreBoard">
+        <div>
+            <p id="WinScore">Win : </p>
+        </div>
+        <div>
+            <p id="DrawScore">Draw : </p>
+        </div>
+        <div>
+            <p id="LoseScore">Lose : </p>
+        </div>
+    </div>
+
+<div style="display: flex; justify-content: space-between;">
+    <div>
+        <p id="ResultOfLastGame">The last update will shown here</p>
+    </div>
+    <div>
+        <img id="ResultImg" src="" alt="">
+    </div>
+    <div>
+        <button id="ResetButton" onclick="ResetScoreBoards()">Click To Reset Score Boards</button>
+    </div>
+</div>
+
+
 
     <script src="main.js"></script>
 </body>
